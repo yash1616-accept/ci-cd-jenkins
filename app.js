@@ -8,7 +8,7 @@ app.get('/', (req, res) => {
 
 // Export for testing, but only listen if not in a test environment
 if (require.main === module) {
-  app.listen(port, () => {
+  app.listen(80, () => {
     console.log(`Server running at http://localhost:${port}`);
   });
 }
